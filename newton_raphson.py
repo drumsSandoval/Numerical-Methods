@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sympy import *
 
-def F_Newton_Raphson(function,function_deriv,x_0):
+def Newton_Raphson(function,function_deriv,x_0):
     x = symbols('x')
     def newton_Raphson(f,df,x_i):
         x_sig = x_i -f(x_i) / df(x_i)
@@ -47,6 +47,6 @@ if __name__ == '__main__':
         except ValueError:
             print('Hubo un error, intente de nuevo')
 
-    print(F_Newton_Raphson(function,function_deriv, x_0))
+    print(Newton_Raphson(function,function_deriv, x_0))
     graph_function(function, x)
 
