@@ -54,17 +54,12 @@ if __name__ == "__main__":
             eje_y[i] = sympify(polinomio).subs(x, eje_x[i])
         plt.plot(eje_x,eje_y, label=list[j], linewidth=2, color=list_colors[j])
         j+=1
-    plt.title('Serie de Taylor sin(x)-x')
+    plt.title('Serie de Taylor 2*x**2')
     plt.xlabel('Coordenada X')
     plt.ylabel('Coordenada Y')
     plt.legend()
     plt.grid()
     plt.show()
-
-
-
-
-
 
 
 
